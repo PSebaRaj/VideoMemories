@@ -1,3 +1,6 @@
+# Local video store
+/server/videos
+
 # Logs
 logs
 *.log
