@@ -8,7 +8,7 @@ import { Video } from "./model";
 import { UpdateVideoParams, UpdateVideoBody } from "./schema";
 
 const MIME_TYPES = ["video/mp4"];
-const CHUNK_SIZE_BYTES = 1000000; //1MB
+const CHUNK_SIZE_BYTES = 250000; //250 KB, for grep: CHUNKSIZE, BUFFERSIZE
 
 function getPath({
     videoId,

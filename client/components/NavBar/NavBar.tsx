@@ -5,6 +5,7 @@ import { useMe } from "../../context/me";
 import React from "react";
 import UploadVideo from "../UploadVideo/UploadVideo";
 import { VideosContextProvider } from "../../context/videos";
+import ColorSchemeToggler from "../ColorSchemeToggler/ColorSchemeToggler";
 
 function NavBar() {
     const { user, refetch } = useMe();
@@ -22,8 +23,7 @@ function NavBar() {
                                     width="40px"
                                     height="40px"
                                 />
-
-							</a>
+                            </a>
                         </Link>
                     </Box>
 
@@ -39,10 +39,22 @@ function NavBar() {
                                     Register
                                 </Anchor>
                             </Link>
+							<Anchor ml="md" mr="lr">
+							<ColorSchemeToggler />
+							</Anchor>
                         </>
                     )}
 
-                    {user && <UploadVideo />}
+                    {user && (
+                        <>
+                            <Anchor ml="lg" mr="lr">
+                                <UploadVideo />
+                            </Anchor>
+                            <Anchor ml="md" mr="lr">
+                                <ColorSchemeToggler />
+                            </Anchor>
+                        </>
+                    )}
                 </Box>
             </Header>
         </VideosContextProvider>

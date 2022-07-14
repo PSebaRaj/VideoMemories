@@ -1,10 +1,14 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import { MantineProvider } from "@mantine/core";
+import {
+    ColorScheme,
+    ColorSchemeProvider,
+    MantineProvider,
+} from "@mantine/core";
 import { NotificationsProvider } from "@mantine/notifications";
 import { NextPage } from "next";
-import { ReactElement, ReactNode } from "react";
+import { ReactElement, ReactNode, useState } from "react";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { MeContextProvider } from "../context/me";
 
@@ -20,6 +24,9 @@ type AppPropsWithLayout = AppProps & {
 
 function MyApp({ Component, pageProps }: AppProps) {
     const getLayout = Component.getLayout || ((page) => page);
+    const [colorScheme, setColorScheme] = useState<ColorScheme>("light");
+    const toggleColorScheme = (value?: ColorScheme) =>
+        setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));
 
     return (
         <>
@@ -30,25 +37,30 @@ function MyApp({ Component, pageProps }: AppProps) {
                     content="minimum-scale=1, initial-scale=1, width=device-width"
                 />
             </Head>
-            <MantineProvider
-                withGlobalStyles
-                withNormalizeCSS
-                theme={{
-                    colorScheme: "light",
-                }}
+            <ColorSchemeProvider
+                colorScheme={colorScheme}
+                toggleColorScheme={toggleColorScheme}
             >
-                <NotificationsProvider>
-                    <QueryClientProvider client={queryClient}>
-                        <MeContextProvider>
-                            {getLayout(
-                                <main>
-                                    <Component {...pageProps} />
-                                </main>
-                            )}
-                        </MeContextProvider>
-                	</QueryClientProvider>
-                </NotificationsProvider>
-            </MantineProvider>
+                <MantineProvider
+                    withGlobalStyles
+                    withNormalizeCSS
+                    theme={{
+                        colorScheme,
+                    }}
+                >
+                    <NotificationsProvider>
+                        <QueryClientProvider client={queryClient}>
+                            <MeContextProvider>
+                                {getLayout(
+                                    <main>
+                                        <Component {...pageProps} />
+                                    </main>
+                                )}
+                            </MeContextProvider>
+                        </QueryClientProvider>
+                    </NotificationsProvider>
+                </MantineProvider>
+            </ColorSchemeProvider>
         </>
     );
 }

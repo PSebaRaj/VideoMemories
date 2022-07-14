@@ -1,7 +1,8 @@
-import { AppShell, Navbar } from "@mantine/core";
+import { AppShell } from "@mantine/core";
 import React from "react";
 import { VideosContextProvider } from "../context/videos";
 import NavBar from "../components/NavBar/NavBar";
+import RecentlyWatchedSideBar from "../components/RecentlyWatchedSideBar/RecentlyWatchedSideBar";
 
 function HomePageLayout({ children }: { children: React.ReactNode }) {
 
@@ -10,10 +11,7 @@ function HomePageLayout({ children }: { children: React.ReactNode }) {
             <AppShell
                 padding="md"
                 navbar={
-                    // define within another component
-                    <Navbar width={{ base: 200 }} height={500} p="xs">
-                        Side items
-                    </Navbar>
+					<RecentlyWatchedSideBar />
                 }
                 header={
 					<NavBar />
