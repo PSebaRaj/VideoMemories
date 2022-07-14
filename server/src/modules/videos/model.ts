@@ -1,10 +1,8 @@
 import { getModelForClass, prop, Ref } from "@typegoose/typegoose";
 import { User } from "../user/model";
-import { customAlphabet } from "nanoid";
 const xid = require("xid-js");
 
 // limit video id to these characters
-//const nanoid = customAlphabet("1234567890abcdefghijklmnopqrstuvwxyz", 10);
 
 export class Video {
     @prop()

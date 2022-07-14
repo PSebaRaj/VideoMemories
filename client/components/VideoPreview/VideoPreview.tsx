@@ -1,8 +1,13 @@
 import { Card, Text } from "@mantine/core";
 import Link from "next/link";
-import { Video } from "../types";
+import { Video } from "../../types";
 
 function VideoPreview({ video }: { video: Video }) {
+
+	// conv to local time zone if need to, etc.
+	let formatDate = new Date(video.updatedAt);
+
+
     return (
         <Link href={`/watch/${video.videoId}`} passHref>
             <Card
@@ -16,6 +21,7 @@ function VideoPreview({ video }: { video: Video }) {
                 </Text>
 
                 <Text size="sm">{video.description}</Text>
+                <Text size="sm">Last modified: {formatDate.toDateString()}</Text>
             </Card>
         </Link>
     );
