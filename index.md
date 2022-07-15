@@ -4,7 +4,7 @@
 
 A full stack application which enables groups to upload and store videos for each other to see. Pictures of the UI (v1.0.0) can be found [here](https://github.com/PSebaRaj/VideoMemories/blob/main/client/README.md#ui).
 
-Written in Typescript, using Next.js and MongoDB. MongoDB was chosen, as the only thing stored in the database is the user information (signup / login) and I thought a relational schema was unnecessary. The videos are stored on the server in the ./server/videos subdirectory (gitignored).
+Written in TypeScript, using Next.js and MongoDB. MongoDB was chosen, as the only thing stored in the database is the user information (signup / login) and I thought a relational schema was unnecessary. The videos are stored on the server in the ./server/videos subdirectory (gitignored).
 
 This project is my first time using Next.js, so I would love any feedback, especially if you notice any glaring concern with my implementation of the framework.
 
