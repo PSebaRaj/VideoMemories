@@ -2,6 +2,8 @@
 
 Backend of VideoMemories. Written in TypeScript.
 
+User credentials stored as JWT on client ("accessToken").
+
 ## Postman
 The Postman collection for testing the REST API functions can be found [here](https://google.com).
 

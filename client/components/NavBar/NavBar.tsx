@@ -30,7 +30,8 @@ function NavBar() {
                     {!user && (
                         <>
                             <Link href="/login" passHref>
-                                <Anchor ml="lg" mr="lr">
+                                <Anchor ml="lg" mr="lr" >
+									<div ></div>
                                     Login
                                 </Anchor>
                             </Link>
@@ -40,7 +41,7 @@ function NavBar() {
                                 </Anchor>
                             </Link>
 							<Anchor ml="md" mr="lr">
-							<ColorSchemeToggler />
+							<ColorSchemeToggler size={25} />
 							</Anchor>
                         </>
                     )}
@@ -51,7 +52,7 @@ function NavBar() {
                                 <UploadVideo />
                             </Anchor>
                             <Anchor ml="md" mr="lr">
-                                <ColorSchemeToggler />
+                                <ColorSchemeToggler size={35} />
                             </Anchor>
                         </>
                     )}
