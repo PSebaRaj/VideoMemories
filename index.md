@@ -2,7 +2,7 @@
 [![Latest Release](https://img.shields.io/github/release/psebaraj/videomemories.svg?style=for-the-badge)](https://github.com/psebaraj/videomemories/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=for-the-badge)](/LICENSE)
 
-A full stack application which enables groups to upload and store videos for each other to see. Pictures of the UI (v1.0.0) can be found [here](https://github.com/PSebaRaj/VideoMemories/blob/main/client/README.md#ui).
+A full stack application which enables my family to upload and store videos for each other to see. Pictures of the UI (v1.0.0) can be found [here](https://github.com/PSebaRaj/VideoMemories/blob/main/client/README.md#ui). Created because AirDrop was incompatible within the family, the videos were too large to send over email, and GDrive was full.
 
 Written in TypeScript, using Next.js and MongoDB. MongoDB was chosen, as the only thing stored in the database is the user information (signup / login) and I thought a relational schema was unnecessary. The videos are stored on the server in the ./server/videos subdirectory (gitignored).
 
