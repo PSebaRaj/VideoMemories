@@ -10,7 +10,7 @@ Written in Typescript, using Next.js and MongoDB.
 
 ## To-Do:
 - [ ] Thumbnail in video preview
-- [ ] Recently watches videos
+- [ ] Recently watched videos
 
 ## Dependencies
 - [Client](https://github.com/PSebaRaj/VideoMemories/blob/main/client/README.md#dependencies)
