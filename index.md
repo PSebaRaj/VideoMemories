@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
+## VideoMemories - Github Pages
+[![Latest Release](https://img.shields.io/github/release/psebaraj/videomemories.svg?style=for-the-badge)](https://github.com/psebaraj/videomemories/releases)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=for-the-badge)](/LICENSE)
 
-You can use the [editor on GitHub](https://github.com/PSebaRaj/VideoMemories/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+A place for groups to upload and store videos for each other to see. Pictures of the UI (v1.0.0) can be found [here](https://github.com/PSebaRaj/VideoMemories/blob/main/client/README.md#ui).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Languages, Technologies, and Frameworks
+#### Server
+- TypeScript
+- Node.js
+- Express
+- MongoDB
+- Zod
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/PSebaRaj/VideoMemories/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+#### Client
+- TypeScript
+- React
+- Next.js
