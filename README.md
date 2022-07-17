@@ -4,6 +4,8 @@
 [![Lines of Code](https://img.shields.io/tokei/lines/github/psebaraj/VideoMemories?style=for-the-badge)](https://img.shields.io/tokei/lines/github/psebaraj/VideoMemories?style=for-the-badge)
 [![Commits since Version Change](https://img.shields.io/github/commits-since/psebaraj/videomemories/latest?include_prereleases&style=for-the-badge)](https://github.com/PSebaRaj/VideoMemories/releases/tag/v1.0.0)
 
+[![CP](https://forthebadge.com/images/badges/compatibility-club-penguin.svg)]
+
 A place for my family to upload and store videos for each other to see. Pictures of the UI (v1.0.0) can be found [here](https://github.com/PSebaRaj/VideoMemories/blob/main/client/README.md#ui).
 
 Written in Typescript, using Next.js and MongoDB.
