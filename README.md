@@ -1,16 +1,16 @@
 # VideoMemories
 [![Latest Release](https://img.shields.io/github/release/psebaraj/VideoMemories.svg?style=for-the-badge)](https://github.com/psebaraj/VideoMemories/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=for-the-badge)](/LICENSE)
-[![Lines of Code](https://img.shields.io/tokei/lines/github/psebaraj/VideoMemories?style=for-the-badge)](https://github.com/psebaraj/VideoMemories/actions)
+[![Lines of Code](https://img.shields.io/tokei/lines/github/psebaraj/VideoMemories?style=for-the-badge)](https://img.shields.io/tokei/lines/github/psebaraj/VideoMemories?style=for-the-badge)
 [![Commits since Version Change](https://img.shields.io/github/commits-since/psebaraj/videomemories/latest?include_prereleases&style=for-the-badge)](https://github.com/PSebaRaj/VideoMemories/releases/tag/v1.0.0)
 
-A place for groups to upload and store videos for each other to see. Pictures of the UI (v1.0.0) can be found [here](https://github.com/PSebaRaj/VideoMemories/blob/main/client/README.md#ui).
+A place for my family to upload and store videos for each other to see. Pictures of the UI (v1.0.0) can be found [here](https://github.com/PSebaRaj/VideoMemories/blob/main/client/README.md#ui).
 
 Written in Typescript, using Next.js and MongoDB.
 
 ## To-Do:
 - [ ] Thumbnail in video preview
-- [ ] Recently watches videos
+- [ ] Recently watched videos
 
 ## Dependencies
 - [Client](https://github.com/PSebaRaj/VideoMemories/blob/main/client/README.md#dependencies)
