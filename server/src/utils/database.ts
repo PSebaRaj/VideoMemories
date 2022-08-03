@@ -6,7 +6,7 @@ const DB_CONNECTION_STRING =
     "mongodb://localhost:27017/videomemories";
 
 export async function connectToDatabase() {
-    try {
+		try {
         await mongoose.connect(DB_CONNECTION_STRING);
         logger.info("Conected to database");
     } catch (e) {

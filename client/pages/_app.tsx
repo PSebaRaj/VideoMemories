@@ -22,8 +22,9 @@ type AppPropsWithLayout = AppProps & {
     Component: NextPageWithLayout;
 };
 
-function MyApp({ Component, pageProps }: AppProps) {
-    const getLayout = Component.getLayout || ((page) => page);
+function MyApp(props: AppPropsWithLayout) {
+    const { Component, pageProps } = props;
+    const getLayout = Component.getLayout ?? ((page) => page);
     const [colorScheme, setColorScheme] = useState<ColorScheme>("light");
     const toggleColorScheme = (value?: ColorScheme) =>
         setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));

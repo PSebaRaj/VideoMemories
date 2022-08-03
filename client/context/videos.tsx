@@ -6,7 +6,7 @@ import { QueryKeys, Video } from "../types";
 
 const VideoContext = createContext<{
     videos: Video[];
-    refetch: <TPageData>(
+	refetch: <TPageData>(
         options?: (RefetchOptions & RefetchQueryFilters<TPageData>) | undefined
     ) => any;
     // @ts-ignore
