@@ -9,18 +9,18 @@ Fontend of VideoMemories. Written in TypeScript.
 
 ## UI
 ### In order of natural user flow
-<img src="./../pictures/1-InitialView.png" alt="drawing" width="500"/>
-<img src="./../pictures/2-LoginScreen.png" alt="drawing" width="500"/>
-<img src="./../pictures/3-AfterLogin.png" alt="drawing" width="500"/>
-<img src="./../pictures/4-VideoUpload.png" alt="drawing" width="500"/>
-<img src="./../pictures/5-VideoUploadSelection.png" alt="drawing" width="500"/>
-<img src="./../pictures/6-PublishVideo.png" alt="drawing" width="500"/>
-<img src="./../pictures/7-VideoPublished.png" alt="drawing" width="500"/>
-<img src="./../pictures/8-ViewVideo.png" alt="drawing" width="500"/>
+<img src="./../photos/1-InitialView.png" alt="drawing" width="500"/>
+<img src="./../photos/2-LoginScreen.png" alt="drawing" width="500"/>
+<img src="./../photos/3-AfterLogin.png" alt="drawing" width="500"/>
+<img src="./../photos/4-VideoUpload.png" alt="drawing" width="500"/>
+<img src="./../photos/5-VideoUploadSelection.png" alt="drawing" width="500"/>
+<img src="./../photos/6-PublishVideo.png" alt="drawing" width="500"/>
+<img src="./../photos/7-VideoPublished.png" alt="drawing" width="500"/>
+<img src="./../photos/8-ViewVideo.png" alt="drawing" width="500"/>
 
 
 ### Color Schemes (Light and Dark) permeate through elements
-<img src="./../pictures/LightMode-AfterLogin.png" alt="drawing" width="500"/>
-<img src="./../pictures/LightMode-ViewVideo.png" alt="drawing" width="500"/>
+<img src="./../photos/LightMode-AfterLogin.png" alt="drawing" width="500"/>
+<img src="./../photos/LightMode-ViewVideo.png" alt="drawing" width="500"/>
 
 
